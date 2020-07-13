@@ -1,0 +1,22 @@
+.row__posters {
+  display: flex; /*Earlier it was all vertical now its horizontal just comment it out and see*/
+  overflow-y: hidden;
+  overflow-x: scroll; /*The scroller is added in the x axis*/
+  padding: 20px;
+}
+/*Tells all the browsers to set property of scrollbar as none*/
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms; /*So it changes size nicely*/
+}
+
+.row__poster:hover {
+  transform: scale(1.1);
+}
